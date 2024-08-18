@@ -4,7 +4,7 @@ import torch
 import cv2
 class FRLL(Dataset):
 
-    def __init__(self,train=True, transform=None,dataset='amsl',file_path='/research/iprobe-shuklan3/cropped_datasets/AMSL/frll_identity_split.csv'):
+    def __init__(self,train=True, transform=None,dataset='amsl',file_path=''):
         self.df=pd.read_csv(file_path)
         self.df=self.df[self.df['dataset']==dataset]
         self.df=self.df[self.df['is_train']==int(train)]
