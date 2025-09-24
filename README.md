@@ -9,7 +9,7 @@
 A facial morph is an image strategically created by combining two face images pertaining to two distinct identities. The goal is to create a face image that can be matched to two different identities by a face matcher. Face demorphing inverts this process and attempts to recover the original images constituting a facial morph. Existing demorphing techniques have two major limitations: (a) they assume that some identities are common in the train and test sets; and (b) they are prone to the morph replication problem, where the outputs are merely replicates of the input morph. In this paper, we overcome these issues by proposing dc-GAN (dual-conditioned GAN), a novel demorphing method conditioned on the morph image as well as the embedding extracted from the image. Our method overcomes the morph replication problem and produces high-fidelity reconstructions of the constituent images. Moreover, the proposed method is highly generalizable and applicable to both reference-based and reference-free demorphing methods. Experiments were conducted using the AMSL, FRLL-Morphs, and MorDiff datasets to demonstrate the efficacy of the method. 
 
 ## Methodology
-![Methodology](assets/fg2025.PNG)
+![Methodology](assets/fg2025.jpg)
 
 *Dual-Conditioned GAN for Reference-Free Demorphing: An image encoder, E, encodes the morph image, which is then used to condition the generator. The generator, based on a UNet architecture, G, takes in the MORPH image and the encoded representation, E(MORPH), producing two outputs, OUT1 and OUT2. The discriminator is trained to distinguish between the real set (MORPH, BF1, BF2) and the synthetic set (MORPH, OUT1, OUT2), differentiating real from synthetic pairs.*
 
@@ -23,13 +23,13 @@ A facial morph is an image strategically created by combining two face images pe
 ## Results
 
 The proposed method was evaluated on several benchmark morph datasets, demonstrating superior performance in demorphing accuracy compared to existing techniques. Quantitative results show significant improvements in terms of both visual fidelity and identity preservation.
-![results](assets/ijcb2025-r1.PNG)
+![results](assets/fg2025-r1.png)
 
 *Figure 2: Reference-Free Demorphing Visualization: We illustrate the results of our reference-free demorphing approach. The model takes the morph image (MORPH) as input and produces two outputs (OUT1 and OUT2). The ground-truth images used to generate the morph are denoted as BF1 and BF2.*
 
 
 
-![results](assets/fg2025-r2.PNG)
+![results](assets/fg2025-r2.png)
 
 *Figure 3:  Differential Demorphing Visualization: We illustrate the results of our differential demorphing approach. The model receives the morph image (MORPH) and the transformed ground-truth image (TRANSFORMED BF1) and produces an output (OUT). The ground truth (GT) is shown, which, along with the ground-truth image (BF1), was used to generate the morph image (MORPH). Note that our method does not assume that the demorphing process uses the exact same ground-truth image (BF1) that was used to create the morph. *
 *
