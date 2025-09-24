@@ -34,7 +34,7 @@ The proposed method was evaluated on several benchmark morph datasets, demonstra
 *Figure 3:  Differential Demorphing Visualization: We illustrate the results of our differential demorphing approach. The model receives the morph image (MORPH) and the transformed ground-truth image (TRANSFORMED BF1) and produces an output (OUT). The ground truth (GT) is shown, which, along with the ground-truth image (BF1), was used to generate the morph image (MORPH). Note that our method does not assume that the demorphing process uses the exact same ground-truth image (BF1) that was used to create the morph. *
 *
 
-*Table 1: Restoration Accuracy: Comparison of our reference-free approach to SDeMorph \cite{ref18} and Identity-Preserving Demorphing (IPD) \cite{ref66}. Unlike our method, which operates on unseen faces (scenario 3) and is significantly more challenging, the other methods assume the same identities are present in both training and test morphs (scenario 1). In scenario 3, our method significantly outperforms the current state-of-the-art method.*
+*Table 1: Restoration Accuracy: Comparison of our reference-free approach to SDeMorph  and Identity-Preserving Demorphing (IPD). Unlike our method, which operates on unseen faces (scenario 3) and is significantly more challenging, the other methods assume the same identities are present in both training and test morphs (scenario 1). In scenario 3, our method significantly outperforms the current state-of-the-art method.*
 ![results](assets/fg2025-res.png)
 
 
