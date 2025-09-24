@@ -35,7 +35,7 @@ The proposed method was evaluated on several benchmark morph datasets, demonstra
 *
 
 *Table 1: Restoration Accuracy: Comparison of our reference-free approach to SDeMorph \cite{ref18} and Identity-Preserving Demorphing (IPD) \cite{ref66}. Unlike our method, which operates on unseen faces (scenario 3) and is significantly more challenging, the other methods assume the same identities are present in both training and test morphs (scenario 1). In scenario 3, our method significantly outperforms the current state-of-the-art method.*
-![results](assets/fg2025-res.PNG)
+![results](assets/fg2025-res.png)
 
 
 
